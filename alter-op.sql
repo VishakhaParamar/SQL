@@ -14,12 +14,9 @@ rename column att to attendance;
 alter table student
 modify column attendance varchar(2);
 --on different server we have to write different query.
-/*1*/
+--SQL Server / MS Access
 ALTER TABLE table_name
 ALTER COLUMN column_name datatype;
-/*2*/
+--My SQL / Oracle (prior version 10G)
 ALTER TABLE table_name
 MODIFY COLUMN column_name datatype;
-/*3*/
-ALTER TABLE table_name
-MODIFY column_name datatype;
