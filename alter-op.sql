@@ -13,6 +13,7 @@ rename column att to attendance;
 --modify column datatype
 alter table student
 modify column attendance varchar(2);
+
 --on different server we have to write different query.
 --SQL Server / MS Access
 ALTER TABLE table_name
