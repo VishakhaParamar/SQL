@@ -11,3 +11,7 @@ create table marks(
                      Branch varchar(20),
                      Rollno int,
                      mark int);
+
+-- create table as a existing table.
+create table student as
+select En_no, Name, Branch, Rollno from btech;
