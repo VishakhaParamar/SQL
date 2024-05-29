@@ -12,5 +12,8 @@ insert into btech (en_no,name) values
                                      (1008,'karan');
 
 --here we are adding data into one table to another table
+insert into student(En_no,Name, Branch, Rollno)
+select En_no, Name, Branch, Rollno from btech;
+
 insert into marks(Name, Branch, Rollno)
 select Name, Branch, Rollno from student;
