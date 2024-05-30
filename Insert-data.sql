@@ -28,3 +28,7 @@ set mark = case
              when rollno = 8 then 99
              else 90
              end;
+
+--here we are inserting some of data from exsiting table.
+insert into branch (En_no, Branch, Rollno) 
+select En_no, Branch, Rollno from student;
