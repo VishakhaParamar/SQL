@@ -21,3 +21,9 @@ create table branch(
                     En_no int,
                     Branch varchar,
                     Rollno int);
+
+--create table for adding date and for some other functionalities.
+create table ss(
+                Rollno int,
+                ssamount int,
+                ssdate date);
