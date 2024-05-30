@@ -15,3 +15,9 @@ create table marks(
 -- create table as a existing table.
 create table student as
 select En_no, Name, Branch, Rollno from btech;
+
+--create table for joining opration
+create table branch(
+                    En_no int,
+                    Branch varchar,
+                    Rollno int);
