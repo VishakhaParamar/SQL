@@ -32,3 +32,8 @@ set mark = case
 --here we are inserting some of data from exsiting table.
 insert into branch (En_no, Branch, Rollno) 
 select En_no, Branch, Rollno from student;
+
+--here we are inserting data diff.
+insert into ss (Rollno)
+select Rollno from btech;
+
