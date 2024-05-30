@@ -37,3 +37,9 @@ select En_no, Branch, Rollno from student;
 insert into ss (Rollno)
 select Rollno from btech;
 
+update ss
+set ssamount = 2500, ssdate = '2023-08-14'
+where rollno = 3;
+/*update table_name
+set column_name1 = value, column_name2 = value
+where condition*/
