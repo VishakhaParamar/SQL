@@ -30,16 +30,37 @@ set mark = case
              end;
 
 --here we are inserting some of data from exsiting table.
-insert into branch (En_no, Rollno, Branch) 
-select En_no, Rollno, Branch from student;
+insert into branch (Rollno, En_no, Branch) 
+select Rollno, En_no, Branch from student;
 
 --here we are inserting data diff.
 insert into ss (Rollno)
 select Rollno from btech;
 
-update ss
-set ssamount = 2500, ssdate = '2023-08-14'
-where rollno = 3;
 /*update table_name
 set column_name1 = value, column_name2 = value
 where condition*/
+update ss
+set ssamount = 5000, ssdate = '2023-08-14'
+where rollno = 1;
+update ss
+set ssamount = 2500, ssdate = '2023-09-24'
+where rollno = 2;
+update ss
+set ssamount = 4000, ssdate = '2023-11-04'
+where rollno = 3;
+update ss
+set ssamount = 4500, ssdate = '2023-11-11'
+where rollno = 4;
+update ss
+set ssamount = 3000, ssdate = '2023-08-14'
+where rollno = 5;
+update ss
+set ssamount = 2500, ssdate = '2023-12-22'
+where rollno = 6;
+update ss
+set ssamount = 3500, ssdate = '2023-10-29'
+where rollno = 7;
+update ss
+set ssamount = 2000, ssdate = '2023-09-13'
+where rollno = 8;
