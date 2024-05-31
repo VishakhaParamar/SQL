@@ -8,9 +8,9 @@ create table btech(
 
 -- create table which can connect with student table.
 create table marks(
+                     Rollno int,
                      Name varchar(20),
                      Branch varchar(20),
-                     Rollno int,
                      mark int,
                      foreign key (Rollno) references btech(Rollno)
                      on delete cascade
@@ -18,13 +18,13 @@ create table marks(
 
 -- create table as a existing table.
 create table student as
-select En_no, Name, Branch, Rollno from btech;
+select En_no, Rollno, Name, Branch from btech;
 
 --create table for joining opration
 create table branch(
+                    Rollno int,
                     En_no int,
                     Branch varchar,
-                    Rollno int,
                     foreign key (Rollno) references btech(Rollno)
                     on delete cascade
                     on update cascade);
