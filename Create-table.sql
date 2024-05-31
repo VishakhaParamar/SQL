@@ -33,7 +33,7 @@ create table branch(
 create table ss(
                 Rollno int,
                 ssamount int,
-                ssdate date
+                ssdate date,
                 foreign key (Rollno) references btech(Rollno)
                 on delete cascade
                 on update cascade);
