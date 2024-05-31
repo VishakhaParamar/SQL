@@ -1,22 +1,22 @@
 -- here we are adding data in table 
-insert into btech values(1001,'kavya','CSE',1),
-                        (1002,'nishant','IT',2),
-                        (1003,'akay','CSE',3),
-                        (1004,'nishtha','ICT',4),
-                        (1005,'chhaya','IT',5),
-                        (1006,'nevil','CSE',6);
+insert into btech values(1001, 1, 'kavya', 'CSE'),
+                        (1002, 2, 'nishant', 'IT'),
+                        (1003, 3, 'akay', 'CSE'),
+                        (1004, 4, 'nishtha', 'ICT'),
+                        (1005, 5, 'chhaya', 'IT'),
+                        (1006, 6, 'nevil', 'CSE');
 
 -- here we are adding data in columns
-insert into btech (en_no,name,branch,rollno) values 
-                                     (1007,'harry','CSE',7),
-                                     (1008,'karan','IT',8);
+insert into btech (en_no, rollno, name, branch) values 
+                                     (1007, 7, 'harry', 'CSE'),
+                                     (1008, 8, 'karan', 'IT');
 
 --here we are adding data into one table to another table
-insert into student(En_no,Name, Branch, Rollno)
-select En_no, Name, Branch, Rollno from btech;
+insert into student(En_no, Rollno, Name, Branch)
+select En_no, Rollno, Name, Branch from btech;
 
-insert into marks(Name, Branch, Rollno)
-select Name, Branch, Rollno from student;
+insert into marks(Rollno, Name, Branch)
+select Rollno, Name, Branch from student;
 
 --here we are adding specific value in column
 update marks
@@ -30,8 +30,8 @@ set mark = case
              end;
 
 --here we are inserting some of data from exsiting table.
-insert into branch (En_no, Branch, Rollno) 
-select En_no, Branch, Rollno from student;
+insert into branch (En_no, Rollno, Branch) 
+select En_no, Rollno, Branch from student;
 
 --here we are inserting data diff.
 insert into ss (Rollno)
