@@ -24,7 +24,7 @@ To get started, you can:
 
 1. **Clone this repository**:
    ```bash
-   git clone <repository-url>
+   git clone <[repository-url](https://github.com/VishakhaParamar/SQL/>
    ```
    
 2. **Explore each SQL file** to understand the different database objects and concepts.
